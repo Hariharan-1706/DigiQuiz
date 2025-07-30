@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Single Player Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="single-player.js" defer></script>
+</head>
+<body class="quiz-page">
+  <div class="quiz-container">
+    <div id="quiz">
+      <div id="question-container">
+        <h2 id="question">Loading...</h2>
+        <div id="answer-buttons" class="btn-grid"></div>
+      </div>
+      <div id="controls">
+        <button id="next-btn" class="button hidden">Next</button>
+      </div>
+    </div>
+    <div id="result" class="hidden">
+      <h2>Quiz Complete!</h2>
+      <p id="score-text"></p>
+      <a href="index.html" class="button">Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!-- multiplayer-quiz.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Multiplayer Quiz Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Multiplayer Quiz</h1>
+    <p id="room-info">Loading room info...</p>
+    <!-- Your multiplayer quiz UI and logic will go here -->
+  </div>
+
+  <script>
+    // Get the room ID from URL
+    const params = new URLSearchParams(window.location.search);
+    const room = params.get('room') || 'Unknown';
+
+    document.getElementById('room-info').textContent = `Room ID: ${room}`;
+
+    // TODO: Add multiplayer quiz logic here
+  </script>
+</body>
+</html>

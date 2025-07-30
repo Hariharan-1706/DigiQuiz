@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Multiplayer - Digi Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="multiplayer.js" defer></script>
+</head>
+<body class="quiz-page">
+  <div class="quiz-container" id="multiplayer-container">
+    <h2>Multiplayer Mode</h2>
+
+    <div id="mode-selection">
+      <button class="button" id="create-room-btn">Create Room</button>
+      <button class="button" id="join-room-btn">Join Room</button>
+    </div>
+
+    <!-- Create Room UI -->
+<div id="create-room" class="hidden">
+  <p>Your Room ID:</p>
+  <h3 id="room-id">---</h3>
+  <p>Share this ID with your friends to let them join.</p>
+  <button class="button" id="start-game-creator">Start Game</button>
+  <a href="index.html" class="button">Back to Home</a>
+</div>
+
+
+    <!-- Join Room UI -->
+    <div id="join-room" class="hidden">
+      <p>Enter Room ID:</p>
+      <input type="text" id="join-room-id" placeholder="Enter room ID" />
+      <button class="button" id="start-game-btn">Start Game</button>
+      <a href="index.html" class="button">Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>
